@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/static/css/style_login.css"/>
+
+<div class="container">
+    {% for cat, msg in get_flashed_messages(True) %}
+        <div class="flash {{ cat }}">{{ msg }}</div>
+    {% endfor %}
+    <form action="" method="post">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+        <div class="dws-input">
+            {{ form.login() }}
+        </div>
+        <div class="dws-input">
+            {{ form.password() }}
+        </div>
+        <div class="login_remember">
+            {{ form.remember() }} {{ form.remember.label }}
+        </div>
+        <div class="login_submit">
+            {{ form.submit() }}
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,81 @@
+* {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/*Заголовок*/
+.header-menu {
+    display: grid;
+}
+
+.logo {
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    background-color: #6e6eee;
+}
+
+.logo:hover {
+    background-color: #381d60;
+}
+img {
+    max-width: 150px;
+}
+
+.header_menu_title {
+    background-color: #8989f6;
+    text-align: center;
+}
+
+/*Menu*/
+
+.header_menu a {
+	text-decoration: none;
+	color: #fdc073;
+}
+.header_menu a:hover {
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+
+.header_menu {
+	display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, auto);
+    padding: 0 10px 0 15px;
+	list-style: none;
+	background: #3F4137;
+	height: 40px;
+	margin: 0;
+	font-size: 25px;
+	overflow: hidden;
+	align-items: center;
+}
+
+
+/*Menu left contracts_menu_left*/
+.contracts_menu_left {
+    border: 1px solid;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 15%;
+
+}
+
+
+/*Всплывающие сообщения*/
+.flash {
+    padding: 10px;
+}
+
+.flash.success {
+    border: 1px solid #21DB56;
+    background: #AEFFC5;
+}
+
+.flash.error {
+    border: 1px solid #FF4343;
+    background: #FF9C9C;
+}
